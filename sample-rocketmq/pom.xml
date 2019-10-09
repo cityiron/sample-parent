@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>sample-rocketmq</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>rocketmq-4.x</module>
+    </modules>
 
 
 </project>
