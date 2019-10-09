@@ -15,6 +15,7 @@
         <module>sample-dubbo</module>
         <module>sample-es</module>
         <module>sample-java-base</module>
+        <module>sample-canal</module>
     </modules>
 
 

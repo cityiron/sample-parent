@@ -22,11 +22,11 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class DemoJobHandler extends IJobHandler {
 
-    @Value("${random.max:10000}")
-    private String max;
+    @Value("${gd.random.max:10000}")
+    private int max;
 
-    @Value("${random.min:200}")
-    private String min;
+    @Value("${gd.random.min:200}")
+    private int min;
 
     @Override
     public ReturnT<String> execute(String param) throws Exception {
@@ -42,19 +42,19 @@ public class DemoJobHandler extends IJobHandler {
         return SUCCESS;
     }
 
-    public String getMax() {
+    public int getMax() {
         return max;
     }
 
-    public void setMax(String max) {
+    public void setMax(int max) {
         this.max = max;
     }
 
-    public String getMin() {
+    public int getMin() {
         return min;
     }
 
-    public void setMin(String min) {
+    public void setMin(int min) {
         this.min = min;
     }
 
