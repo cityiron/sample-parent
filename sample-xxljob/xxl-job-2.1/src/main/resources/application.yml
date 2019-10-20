@@ -10,7 +10,8 @@ xxl:
     executor:
       appname: middleware-test
       ip: ''
-      logpath: /Users/tc/Documents/workspace/github/sample-parent/sample-xxljob/xxl-job-2.1/log
+#      logpath: /Users/tc/Documents/workspace/github/sample-parent/sample-xxljob/xxl-job-2.1/log
+      logpath:
       logretentiondays: -1
       port: 9999
 

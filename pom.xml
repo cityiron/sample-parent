@@ -16,7 +16,16 @@
         <module>sample-es</module>
         <module>sample-java-base</module>
         <module>sample-canal</module>
+        <module>leetcode</module>
     </modules>
 
+    <properties>
+        <git.url>https://github.com/spring-projects/spring-boot</git.url>
+        <git.connection>scm:git:git://github.com/spring-projects/spring-boot.git</git.connection>
+        <git.developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-boot.git</git.developerConnection>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
 
 </project>
