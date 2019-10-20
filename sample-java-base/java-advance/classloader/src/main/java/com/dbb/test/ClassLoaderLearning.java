@@ -1,4 +1,4 @@
-package com.dbb;
+package com.dbb.test;
 
 import java.io.File;
 import java.io.IOException;
