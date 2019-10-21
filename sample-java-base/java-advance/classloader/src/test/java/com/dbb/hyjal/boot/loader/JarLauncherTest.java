@@ -20,7 +20,7 @@ public class JarLauncherTest {
 
     @Test
     public void archivedJarCommonBizFatJar() throws Exception {
-        String path = "/Users/tc/Documents/workspace/gongdao/jiuding-m/jiuding/jiuding-start/target/jiuding.jar";
+        String path = "";
         File jarRoot = new File(path);
         try (JarFileArchive archive = new JarFileArchive(jarRoot)) {
             JarLauncher launcher = new JarLauncher(archive);
@@ -31,11 +31,11 @@ public class JarLauncherTest {
                 ClassLoaderUtils.getUrls(getClass().getClassLoader(), classPathArchives),
                 getClass().getClassLoader().getParent());
 
-            Class<?> startClass = launchedURLClassLoader.loadClass("com.gongdao.yuncourt.Application");
+            Class<?> startClass = launchedURLClassLoader.loadClass("");
 
             launchedURLClassLoader.addThisToParentClassLoader(getClass().getClassLoader());
 
-            startClass = launchedURLClassLoader.loadClass("com.gongdao.yuncourt.Application");
+            startClass = launchedURLClassLoader.loadClass("");
 
             for (Archive classPathArchive : classPathArchives) {
                 classPathArchive.close();
